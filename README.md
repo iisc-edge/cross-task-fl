@@ -1,6 +1,8 @@
 # Cross-Task Federated Backbone Aggregation with Selective State Space Models for Building Energy Analytics
 
-Code and experiment artefacts for our paper accepted at **ACM BALANCES 2026**.
+Code and experiment artefacts for our paper accepted at the **BALANCES 2026**
+workshop, co-located with ACM Sustainability Week 2026 (Banff, AB, Canada,
+June 22–25, 2026).
 
 A single **MambaMixer** (selective SSM) is trained to serve two building-analytics
 tasks at once — **hourly load forecasting** (ASHRAE) and **energy anomaly
@@ -474,11 +476,13 @@ build on this work, please cite our paper:
   title     = {Cross-Task Federated Backbone Aggregation with Selective State
                Space Models for Building Energy Analytics},
   author    = {Kumar, Bhanu and Srivastava, Naman and Arjunan, Pandarasamy},
-  booktitle = {Proceedings of the ACM International Conference on Systems
-               for Energy-Efficient Buildings, Cities, and Transportation
-               (BALANCES)},
+  booktitle = {ACM Sustainability Week 2026 (ACM Sustainability Week Companion '26),
+               June 22--25, 2026, Banff, AB, Canada},
   year      = {2026},
-  publisher = {ACM}
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  doi       = {10.1145/3765611.3815362},
+  isbn      = {979-8-4007-2199-1/2026/06}
 }
 ```
 
@@ -486,7 +490,9 @@ A plain-text fallback:
 
 > Bhanu Kumar, Naman Srivastava, and Pandarasamy Arjunan. 2026. *Cross-Task
 > Federated Backbone Aggregation with Selective State Space Models for
-> Building Energy Analytics.* In Proceedings of the ACM BALANCES 2026.
+> Building Energy Analytics.* In ACM Sustainability Week 2026 (ACM
+> Sustainability Week Companion '26), June 22–25, 2026, Banff, AB, Canada.
+> ACM, New York, NY, USA. <https://doi.org/10.1145/3765611.3815362>
 
 ---
 
