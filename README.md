@@ -492,7 +492,6 @@ A plain-text fallback:
 > Federated Backbone Aggregation with Selective State Space Models for
 > Building Energy Analytics.* In ACM Sustainability Week 2026 (ACM
 > Sustainability Week Companion '26), June 22–25, 2026, Banff, AB, Canada.
-> ACM, New York, NY, USA. <https://doi.org/10.1145/3765611.3815362>
 
 ---
 
