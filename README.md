@@ -57,6 +57,18 @@ head split is exactly what the federated protocol exploits — the backbone
 is averaged across all 70 clients regardless of task, while the two heads
 are averaged only within their task groups.
 
+![Cross-Task Federated Backbone Aggregation](figures/fl_preview.png)
+
+The figure above shows the **Cross-Task Federated Backbone Aggregation
+(CT-FBA)** protocol. Each of the 70 federated clients holds either an
+ASHRAE forecasting building or a LEAD anomaly-detection building (never
+both). At every round, the shared multi-scale BiMamba backbone is averaged
+across **all 70 clients regardless of task**, while the forecasting head
+and the anomaly reconstruction head are averaged only within their own
+task groups (35 clients each). This is what lets a single SSM backbone
+learn jointly from both tasks without either client pool ever exposing
+its raw meter data or its task-specific head weights to the other.
+
 ---
 
 ## Novelty / unique features
@@ -140,7 +152,7 @@ cross-task-fl/
 │   └── run_baselines.py          # centralized baselines on identical splits
 ├── utils/                        # metrics + logging helpers
 ├── visualization/                # research-paper plots from saved JSON results
-├── figures/                      # architecture, convergence and threshold-sensitivity plots
+├── figures/                      # MambaMixer architecture + cross-task FL aggregation diagrams
 ├── data/                         # processed CSVs + split_metadata.json  (tracked via Git LFS)
 │   ├── ashrae/processed/         #   ashrae_clean.csv, split_metadata.json
 │   └── lead/processed/           #   lead_clean.csv,   split_metadata.json
